@@ -123,7 +123,7 @@ Selanjutnya akan dilakukan peramalan sejumlah data uji yaitu 31 periode. Pada me
 
 ```{r}
 data.gab<-cbind(aktual=c(train_data.ts,rep(NA,31)),pemulusan=c(data.sma,rep(NA,31)),ramalan=c(data.ramal,rep(data.ramal[length(data.ramal)],30)))
-data.gab #forecast 24 periode ke depan
+data.gab #forecast 31 periode ke depan
 ```
 
 Adapun plot data deret waktu dari hasil peramalan yang dilakukan adalah sebagai berikut.
