@@ -189,9 +189,9 @@ Selanjutnya akan dilakukan transformasi secara manual dengan syntax berikut ini.
 
 ```{r}
 #Transformasi Manual
-Production.trans<- data$Production[-1]-data$Production[-12]*rho
-Year.trans<- data$Year[-1]-data$Year[-12]*rho
-HarvestedAcres.trans<- data$HarvestedAcres[-1]-data$HarvestedAcres[-12]*rho
+Production.trans<- data$Production[-1]-data$Production[-41]*rho
+Year.trans<- data$Year[-1]-data$Year[-41]*rho
+HarvestedAcres.trans<- data$HarvestedAcres[-1]-data$HarvestedAcres[-41]*rho
 modelCOmanual<- lm(Production.trans~Year.trans+HarvestedAcres.trans)
 summary(modelCOmanual)
 ```
@@ -294,7 +294,7 @@ row.names(akurasi) <- c("SSE","MSE")
 akurasi
 ```
 
-Berdasarkan hasil tersebut dapat diketahui bahwa hasil penanganan autokorelasi dengan metode *Cochrane-Orcutt* dan *Hildreth-Lu* memiliki SSE berturut-turut, sebesar $4954702979$ dan $507848894$ yang mana lebih kecil sehingga lebih baik dibandingkan model awal ketika autokorelasi masih terjadi, yaitu sebesar $11837263935$.
+Berdasarkan hasil tersebut dapat diketahui bahwa hasil penanganan autokorelasi dengan metode *Cochrane-Orcutt* dan *Hildreth-Lu* memiliki SSE berturut-turut, sebesar $  5057849550$ dan $507848894$ yang mana lebih kecil sehingga lebih baik dibandingkan model awal ketika autokorelasi masih terjadi, yaitu sebesar $11837263935$.
 
 # Simpulan
 
