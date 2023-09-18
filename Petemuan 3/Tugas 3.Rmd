@@ -204,7 +204,7 @@ summary(model.ardl)
 Terdapat 3 peubah yang berpengaruh signifikan terhadap nilai $AQI$ yaitu $X_{t}$, $Y_{t-1}$. Artinya, menurut model ARDL dengan $p=15$ dan $q=5$, nilai AQI saat ini dipengaruhi oleh kandungan $SO2$ pada saat ini dan dipengaruhi oleh kandungan $AQI$  1 hari sebelumnya. Model ini cukup baik dengan nilai R-Square sebesar 95.26%. Model keseluruhannya adalah sebagai berikut:
 
 $$
-\hat{Y}= 9.84 -25.41X_t-22.13 X_{t-1}+...+0.15Y_{t-9} -0.16Y_{t-10}
+\hat{Y}= 9.84 -25.41X_t-22.13 X_{t-1}+...+0.15Y_{t-13} -0.16Y_{t-14}
 $$
 
 ### Peramalan dan Akurasi Model ARDL
